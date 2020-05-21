@@ -1,3 +1,10 @@
+
+This is a Full Stack Exercise
+I used ReactJS in the client side,
+and NodeJS in the server side
+
+##
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
