@@ -106,7 +106,7 @@ class MultiStepForm extends Component {
                 return null;
             }
         }
-        // alert('Your details have been successfully received!');
+        
         const customerData = {
             firstName: this.state.firstName,
             lastName: this.state.lastName,
@@ -125,6 +125,7 @@ class MultiStepForm extends Component {
             .then(response => response.text())
             .then(response  => {
                 console.log(response.body);
+                alert('Your details have been successfully received!');
             })
             .catch(err => console.log(err))
 
