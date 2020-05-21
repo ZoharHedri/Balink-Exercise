@@ -1,0 +1,200 @@
+.modal {
+    position: fixed;
+    /* position: relative; */
+    z-index: 500;
+    background-color: white;
+    color:'black';
+    width: 500px;
+    height: 500px;
+    /* border: 1px solid #ccc; */
+    box-shadow: 1px 1px 1px black;
+    padding: 16px;
+    left: 400px;
+    top: 50px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
+    border: none;
+    border-radius: 4px;
+}
+
+.head {
+    color: black;
+}
+
+/* buttons css */
+.buttonOpen {
+    background-color: #75489D;
+    /* border: none; */
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.buttonOpen {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #75489D;
+    border-radius: 4px;
+  }
+  
+  .buttonOpen:hover {
+    background-color: #75489D;
+    color: white;
+  }
+
+.buttonNext {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: royalblue;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.buttonNext span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttonNext span:after {
+  /* :before { content:”\00ab”; } */
+  content: '\00bb';
+  position: absolute;
+  /* opacity: 0; */
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttonNext:hover span {
+  padding-right: 25px;
+}
+
+.buttonNext:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.buttonPrev {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: green;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.buttonPrev span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+.buttonPrev span:before {
+    content: '\00ab';
+    position: absolute;
+    /* opacity: 0; */
+    top: 0;
+    left: -15px;
+    transition: -0.5s;
+  }
+
+.buttonPrev:hover span {
+    padding-right: 25px;
+}
+
+.buttonPrev:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.close-button {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.buttonSub {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: gray;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.buttonSub span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    /* transition: 0.5s; */
+}
+
+/* .buttonSub:hover span {
+    padding-right: 25px;
+} */
+
+.buttonSub:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+/* inputs css*/
+input {
+    /* display: block; */
+    width: 75%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0px solid #ced4da;
+    /* border: none;
+    outline: none;
+    text-decoration: underline; */
+    border-bottom: 1px solid #ced4da;
+    /* border-radius: 0.25rem; */
+    -webkit-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.search {
+    width: 377px;
+    height: 52px;
+}
+    
