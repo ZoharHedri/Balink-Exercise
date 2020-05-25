@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // import StepOne from './StepOne';
 // import StepTwo from './StepTwo';
 // import StepThree from './StepThree';
+import * as $ from 'jquery'
 
 class MultiStepForm extends Component {
     constructor(props) {
@@ -81,6 +82,8 @@ class MultiStepForm extends Component {
             navigation++;
         }
         console.log("navigation: ", navigation)
+        //activate next step on progressbar using the index of next_fs
+	    $("#progressbar li").eq(navigation).addClass("active");
         this.setState({ navigation })
         // this.props.onClick(true);
     }
@@ -92,6 +95,8 @@ class MultiStepForm extends Component {
             navigation--;
         }
         console.log("navigation: ", navigation)
+        //activate next step on progressbar using the index of next_fs
+	    $("#progressbar li").eq(navigation+1).removeClass("active");
         this.setState({ navigation })
         // this.props.onClick(true);
     }
